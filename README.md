@@ -27,7 +27,7 @@ Run the installation script:
 
 ```bash
 mkdir -p ~/.config/zed/themes
-cp arc-dark.json ~/.config/zed/themes/
+cp themes/arc-dark.json ~/.config/zed/themes/
 ```
 
 2. Restart Zed
@@ -57,7 +57,7 @@ cp arc-dark.json ~/.config/zed/themes/
 
 ## Development
 
-To modify the theme, edit `arc-dark.json` and place it in `~/.config/zed/themes/`. Changes will be applied after restarting Zed.
+To modify the theme, edit `themes/arc-dark.json` and place it in `~/.config/zed/themes/`. Changes will be applied after restarting Zed.
 
 For rapid iteration, use `experimental.theme_overrides` in your Zed settings:
 
@@ -69,6 +69,27 @@ For rapid iteration, use `experimental.theme_overrides` in your Zed settings:
   }
 }
 ```
+
+## Extension Structure
+
+This repository is structured as a Zed extension:
+
+- `extension.toml` - Extension metadata
+- `themes/arc-dark.json` - Theme definition
+- `LICENSE` - MIT License
+- `install.sh` - Quick installation script
+
+## Publishing to Zed Extensions
+
+To publish this theme to the official Zed extension registry:
+
+1. Fork [zed-industries/extensions](https://github.com/zed-industries/extensions)
+2. Add this repository as a submodule
+3. Add entry to `extensions.toml`
+4. Run `pnpm sort-extensions`
+5. Submit a pull request
+
+See [CLAUDE.md](CLAUDE.md) for detailed publishing instructions.
 
 ## Credits
 

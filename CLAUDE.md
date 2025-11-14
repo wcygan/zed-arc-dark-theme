@@ -116,6 +116,60 @@ cargo run -p theme_importer -- path/to/vscode-theme.json
 
 Note: Output may require manual refinement for optimal results.
 
+## Publishing as Zed Extension
+
+### Extension Requirements
+
+**Required files:**
+- `extension.toml` - Extension metadata manifest (required)
+- `themes/` directory - Contains theme JSON files
+- `LICENSE` or `LICENCE` - One of: Apache 2.0, BSD 3-Clause, GNU GPLv3, or MIT
+
+**Note**: Theme-only extensions don't require Rust/WebAssembly code. Only extensions with custom functionality (languages, debuggers, slash commands, etc.) need `Cargo.toml` and `src/lib.rs`.
+
+### extension.toml Format
+
+```toml
+id = "arc-dark-theme"
+name = "Arc Dark Theme"
+version = "1.0.0"
+schema_version = 1
+authors = ["Your Name <email@example.com>"]
+description = "Arc Dark theme for Zed based on the popular Arc Dark color scheme"
+repository = "https://github.com/username/zed-arc-dark-theme"
+```
+
+**Important fields:**
+- `id`: Unique identifier (lowercase, hyphens only)
+- `version`: Semantic versioning (update this for new releases)
+- `schema_version`: Always `1` for current extensions
+- `repository`: Must be HTTPS URL to public Git repository
+
+### Publishing Process
+
+1. **Add LICENSE file** to repository root (required as of Oct 2025)
+2. **Fork** `zed-industries/extensions` repository
+3. **Add as submodule** using HTTPS URL:
+   ```bash
+   cd extensions
+   git submodule add https://github.com/username/zed-arc-dark-theme extensions/arc-dark-theme
+   ```
+4. **Add entry** to `extensions.toml`:
+   ```toml
+   [arc-dark-theme]
+   version = "1.0.0"
+   ```
+5. **Run sort command**: `pnpm sort-extensions`
+6. **Create PR** to `zed-industries/extensions`
+
+### Updating Published Extension
+
+1. Update `version` in `extension.toml`
+2. Commit and push changes to your repository
+3. Update submodule reference in `zed-industries/extensions`
+4. Update version in `extensions.toml`
+5. Create PR
+
 ## File Structure
 
 - `ZED-THEMES.md` - Complete Zed theme schema and documentation

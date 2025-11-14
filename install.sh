@@ -5,7 +5,7 @@
 set -e
 
 THEME_DIR="$HOME/.config/zed/themes"
-THEME_FILE="arc-dark.json"
+THEME_FILE="themes/arc-dark.json"
 
 echo "Installing Arc Dark theme for Zed..."
 
@@ -15,7 +15,7 @@ mkdir -p "$THEME_DIR"
 # Copy theme file
 cp "$THEME_FILE" "$THEME_DIR/"
 
-echo "✓ Theme installed successfully to $THEME_DIR/$THEME_FILE"
+echo "✓ Theme installed successfully to $THEME_DIR/arc-dark.json"
 echo ""
 echo "Next steps:"
 echo "1. Restart Zed"
