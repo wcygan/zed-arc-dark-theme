@@ -105,9 +105,9 @@
             "selection": "#ffa8331a"
           },
           {
-            "background": "#fff938",
-            "cursor": "#fff938",
-            "selection": "#fff9381a"
+            "background": "#ffc369",
+            "cursor": "#ffc369",
+            "selection": "#ffc3691a"
           },
           {
             "background": "#e1afff",
@@ -172,7 +172,7 @@
             "font_weight": 700
           },
           "function": {
-            "color": "#fff938"
+            "color": "#ffc369"
           },
           "keyword": {
             "color": "#ffa833"
@@ -193,7 +193,7 @@
             "color": "#ff963d"
           },
           "preproc": {
-            "color": "#fff938"
+            "color": "#ffc369"
           },
           "property": {
             "color": "#e4b2ff"
@@ -235,7 +235,7 @@
             "color": "#c6ffa8"
           },
           "title": {
-            "color": "#fff938"
+            "color": "#ffc369"
           },
           "type": {
             "color": "#a8ebff"

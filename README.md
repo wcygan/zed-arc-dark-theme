@@ -13,7 +13,15 @@ A dark theme for [Zed](https://zed.dev) based on the popular [Arc Dark](https://
 
 ## Installation
 
-### User Theme Installation
+### Quick Install (Recommended)
+
+Run the installation script:
+
+```bash
+./install.sh
+```
+
+### Manual Installation
 
 1. Copy `arc-dark.json` to your Zed themes directory:
 
@@ -44,7 +52,7 @@ cp arc-dark.json ~/.config/zed/themes/
 - **Keywords**: `#ffa833` (orange)
 - **Strings**: `#c6ffa8` (green)
 - **Comments**: `#a9a9a9` (gray)
-- **Functions**: `#fff938` (yellow)
+- **Functions**: `#ffc369` (yellow)
 - **Types**: `#a8ebff` (cyan)
 
 ## Development
