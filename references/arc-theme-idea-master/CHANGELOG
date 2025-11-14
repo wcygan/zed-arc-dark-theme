@@ -1,0 +1,63 @@
+Release 2.0
+===========
+* Dark versions of the theme is now released as own plugins Arc Theme Dark and Arc Theme Darker.
+* Adjusted dark version editor/table/tree/list/buttons background color to match GTK theme.
+
+Release 1.8
+===========
+* Added "Arc Dark" theme with blue and orange accented colors.
+* Added light and dark editor color schemes. Light matches IntelliJ Light and Dark overrides
+  Darcula with many custom color, since originally it was too dark for the panel/editor and text
+  was not clearly visible.
+* Unified hover effect on buttons and tabs to be lighter and borders on button
+  to better match real Arc theme.
+* Unified tabs styling, have only hover effect, keep panel color on selected tab (except editor tabs).
+
+Release 1.7
+===========
+* Use default panel background also for Toolbar.
+
+Release 1.6
+===========
+* Use default row height in trees.
+
+Release 1.5
+===========
+* Fixed invisible menu separators for light themes.
+* Fixed ScrollBar default background.
+* Fixed Notification more button background.
+
+Release 1.4
+===========
+* Use arc-theme light with blue accent as the default after plugin installation.
+* Use white background as default fixes issues with some input boxes using panel background.
+* Use same style for DefaultTabs as EditorTabs and TabbedPane.
+* Fixed row height in Tree to match Intellij IDEA 2019.2 version.
+* Use panel color for ToolTip color.
+* Fixed CompletionPopup matched and selected color overlap.
+* Unified toolbar separator color to darker.
+
+Release 1.3
+===========
+* Use white background in plugins UI
+* Use accented color for install/update buttons in plugins UI
+* Use same height of plugins UI tabs underline
+* Fixed visibility of counter (eg. number of plugin updates)
+
+Release 1.2
+===========
+* Update for IntelliJ 2019.2
+* Use accented color for tabs underline
+* Added Arc Darker theme with dark menus (its not quite right yet)
+
+Release 1.1
+===========
+* Set compatibility to all IntelliJ IDEs
+* Changed plugin id
+
+Release 1.0
+===========
+* Initial version of theme.
+* Arc light look-alike grey/white colors.
+* Accented color is blue (default) or orange.
+* Compatible with Intellij IDEA 2019.1+

@@ -1,0 +1,86 @@
+<idea-plugin>
+  <id>io.gitlab.zlamalp.arc-theme-idea</id>
+  <name>Arc Theme</name>
+  <version>2.0</version>
+  <vendor email="zlamal@cesnet.cz">Pavel Zlámal</vendor>
+
+  <description><![CDATA[
+  Arc light look alike visual theme for Intellij IDEA. Default accented color is blue or orange.
+  <br/><br/>
+  For version 2019.3 and above.
+  ]]></description>
+
+  <change-notes><![CDATA[
+     <b>2.0</b>
+     <ul>
+       <li>Arc dark version is now separated into own plugins (Arc Theme Dark and Arc Theme Darker).</li>
+     </ul>
+      <b>1.8</b>
+     <ul>
+       <li>Added first version of Arc Dark theme.</li>
+       <li>Unified hover effect to lighter in the light theme (not possible everywhere).</li>
+       <li>Unified styling of tabs.</li>
+       <li>Added own editor theme for light and dark themes.</li>
+     </ul>
+    <b>1.7</b>
+     <ul>
+       <li>Use panel background also for main Toolbar.</li>
+     </ul>
+    <b>1.6</b>
+      <ul>
+        <li>Revert to default row height in Tree, too small row height was temporary bug in Idea.</li>
+      </ul>
+    <b>1.5</b>
+  <ul>
+    <li>Fixed invisible menu separators for light themes.</li>
+    <li>Fixed ScrollBar default background.</li>
+    <li>Fixed Notification more button background.</li>
+  </ul>
+  <b>1.4</b>
+  <ul>
+    <li>Use arc-theme light with blue accent as the default after plugin installation.</li>
+    <li>Use white background as default fixes issues with some input boxes using panel background.</li>
+    <li>Use same style for DefaultTabs as EditorTabs and TabbedPane.</li>
+    <li>Fixed row height in Tree to match Intellij IDEA 2019.2 version.</li>
+    <li>Use panel color for ToolTip color.</li>
+    <li>Fixed CompletionPopup matched and selected color overlap.</li>
+    <li>Unified toolbar separator color to darker.</li>
+  </ul>
+    <b>1.3</b>
+  <ul>
+    <li>Use white background in plugins UI</li>
+    <li>Use accented color for install/update buttons in plugins UI.</li>
+    <li>Use same height of plugins UI tabs underline.</li>
+    <li>Fixed visibility of counter (eg. number of plugin updates).</li>
+  </ul>
+  <b>1.2</b>
+  <ul>
+    <li>Update for IntelliJ 2019.2</li>
+    <li>Use accented color for tabs underline</li>
+    <li>Added Arc Darker theme with dark menus (its not quite right yet)</li>
+  </ul>
+    <b>1.1</b>
+  <ul>
+    <li>Set compatibility to all IntelliJ IDEs</li>
+    <li>Changed plugin id</li>
+  </ul>
+  <b>1.0</b>
+  <ul>
+    <li>Initial release of Arc look alike theme. This is a light version with default blue and optional orange accented color.</li>
+  </ul>
+   ]]></change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="193"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="8ef4359e-d00f-4f7e-a489-85e0e24c2198" path="/arc-theme-orange.theme.json" />
+    <!-- Last one is THE DEFAULT after plugin installation -->
+    <themeProvider id="cb440642-0698-45d8-806e-16c87130322f" path="/arc-theme.theme.json"/>
+  </extensions>
+
+</idea-plugin>

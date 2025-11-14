@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>io.gitlab.zlamalp.arc-theme-idea-darker</id>
+  <name>Arc Theme Darker</name>
+  <version>1.0</version>
+  <vendor email="zlamal@cesnet.cz">Pavel Zlámal</vendor>
+
+  <description><![CDATA[
+  Arc darker look alike visual theme for Intellij IDEA. Default accented color is blue or orange.
+  <br/><br/>
+  For version 2019.3 and above.
+  ]]></description>
+
+  <change-notes><![CDATA[
+     <b>1.0</b>
+     <ul>
+       <li>Moved dark theme outside of the light theme plugin.</li>
+     </ul>
+   ]]></change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="193"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="9dfdda22-9585-459f-9c12-cd58c0b4e1f1" path="/arc-theme_darker-orange.theme.json"/>
+    <themeProvider id="6da12800-6e11-455e-9b84-bb8cc94e7ab6" path="/arc-theme_darker.theme.json"/>
+  </extensions>
+
+</idea-plugin>
