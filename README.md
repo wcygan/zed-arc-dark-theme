@@ -2,6 +2,10 @@
 
 A dark theme for [Zed](https://zed.dev) based on the [IntelliJ Arc Dark Theme](https://gitlab.com/zlamalp/arc-theme-idea) by Pavel Zlámal.
 
+| Header | Header |
+|--------|--------|
+| <img width="1496" height="932" alt="image" src="https://github.com/user-attachments/assets/d50ecdbb-8b9b-416e-a7fa-9622654e46fa" /> | <img width="1496" height="933" alt="image" src="https://github.com/user-attachments/assets/08ae4095-9652-4fe4-a02a-31ccec1ab5f0" /> | 
+
 ### Manual Installation
 
 1. Copy `arc-dark.json` to your Zed themes directory:
@@ -38,4 +42,4 @@ cp themes/arc-dark.json ~/.config/zed/themes/
 
 - Original Arc Theme by horst3180
 - IntelliJ Arc Dark Theme by Pavel Zlámal
-- Adapted for Zed by wcygan
+- Adapted for Zed by wcygan ([zed-industries/extensions/pull/3873](https://github.com/zed-industries/extensions/pull/3873))
