@@ -52,7 +52,7 @@ cp arc-dark.json ~/.config/zed/themes/
 - **Keywords**: `#ffa833` (orange)
 - **Strings**: `#c6ffa8` (green)
 - **Comments**: `#a9a9a9` (gray)
-- **Functions**: `#ffc369` (yellow)
+- **Functions**: `#ffcf69` (yellow)
 - **Types**: `#a8ebff` (cyan)
 
 ## Development
